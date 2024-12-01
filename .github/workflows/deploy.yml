@@ -82,8 +82,8 @@ jobs:
         template: ./deploy/main.bicep
         parameters: >
           environmentType=${{ inputs.environmentType }}
-           reviewApiUrl=${{ inputs.reviewApiUrl }}
-           reviewApiKey=${{ secrets.reviewApiKey }}          
+          reviewApiUrl=${{ inputs.reviewApiUrl }}
+          reviewApiKey=${{ secrets.reviewApiKey }}          
 
   smoke-test:
     runs-on: ubuntu-latest
